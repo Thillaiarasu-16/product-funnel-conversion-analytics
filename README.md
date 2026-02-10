@@ -35,10 +35,10 @@ and understand how feature usage impacts conversion rates.
 
 ## Project Structure
 product-funnel-conversion-analytics/
-├── data/
-│ ├── raw/
-│ └── processed/
-├── sql/
-├── notebooks/
-├── visuals/
-└── README.md
+  ├── data/
+  │   ├── raw/
+  │   └── processed/
+  ├── sql/
+  ├── notebooks/
+  ├── visuals/
+  └── README.md
