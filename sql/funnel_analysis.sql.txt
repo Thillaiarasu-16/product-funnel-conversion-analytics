@@ -1,0 +1,10 @@
+-- Funnel Analysis
+SELECT
+    COUNT(DISTINCT u.user_id) AS signup_users,
+    COUNT(DISTINCT e.user_id) AS activated_users,
+    COUNT(DISTINCT p.user_id) AS converted_users
+FROM users u
+LEFT JOIN events e
+    ON u.user_id = e.user_id AND e.event_name = 'activation'
+LEFT JOIN payments p
+    ON u.user_id = p.user_id;
